@@ -8,12 +8,35 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo-google-fonts/montserrat": "^0.2.0",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-native-community/slider": "^3.0.3",
+    "@react-navigation/bottom-tabs": "^5.11.11",
+    "@react-navigation/native": "^5.9.4",
+    "@react-navigation/stack": "^5.14.5",
+    "@reduxjs/toolkit": "^1.6.1",
     "expo": "~42.0.1",
-    "expo-status-bar": "~1.0.4",
+    "expo-av": "^9.2.3",
+    "expo-font": "~9.2.1",
+    "expo-linear-gradient": "^9.2.0",
+    "expo-screen-orientation": "~3.2.1",
+    "expo-status-bar": "^1.0.4",
+    "firebase": "^8.8.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-safe-area-context": "3.2.0",
+    "react-native-screens": "~3.4.0",
+    "react-native-vector-icons": "^8.1.0",
+    "react-native-video": "^5.1.1",
+    "react-native-video-player": "^0.10.1",
+    "react-native-viewport-units": "0.0.5",
+    "react-native-web": "~0.13.12",
+    "react-navigation-fluid-transitions": "^0.3.2",
+    "react-redux": "^7.2.4",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
