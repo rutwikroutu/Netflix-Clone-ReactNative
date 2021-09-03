@@ -37,6 +37,7 @@ const Gradient = styled(LinearGradient)`
 const Home = ({ navigation }) => {
 
 	const [user, setUser] = useState(null);
+	const [movies, setMovies] = useState(null);
 
 	useEffect(() => {
 		db.collection('users').doc(firebase.auth().currentUser.email).onSnapshot(doc => {
@@ -46,14 +47,6 @@ const Home = ({ navigation }) => {
 		})
 
 	}, [firebase.auth().currentUser])
-
-	const [movies, setMovies] = useState(null);
-
-	useEffect(() => {
-		db.collection('movies').onSnapshot(snapshot => {
-			setMovies(snapshot.docs.map(doc => doc.data()))
-		})
-	}, [])
 
 	useLayoutEffect(() => {
 		const unsubscribe = db
