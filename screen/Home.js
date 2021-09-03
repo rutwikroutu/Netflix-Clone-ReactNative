@@ -49,14 +49,6 @@ const Home = ({ navigation }) => {
 
 	const [movies, setMovies] = useState(null);
 
-	function crimeFilter(value) {
-		return value >= 10
-	}
-
-	function usmovieFilter(value) {
-		return value >= 10
-	}
-
 	useEffect(() => {
 		db.collection('movies').onSnapshot(snapshot => {
 			setMovies(snapshot.docs.map(doc => doc.data()))
